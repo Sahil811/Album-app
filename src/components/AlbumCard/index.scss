@@ -1,0 +1,28 @@
+$album-card-color: #27aa7e;
+$album-card-font-color: #ffffff;
+
+.albumCard {
+  background: $album-card-color;
+  margin-top: 1.2rem;
+  height: 75px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  color: $album-card-font-color;
+
+  &_title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  &_right {
+    font-size: 1.5rem;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}

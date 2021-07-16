@@ -1,0 +1,50 @@
+$pagination_color_primary: #2a8dce;
+$pagination_color_secondary: #ffffff;
+
+.pagination {
+  margin-top: 2rem;
+  max-width: 50rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: auto;
+
+  div {
+    cursor: pointer;
+  }
+
+  &_previous,
+  &_next {
+    color: $pagination_color_secondary;
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    background: $pagination_color_primary;
+    margin: 0 0.5rem;
+    border: none;
+  }
+
+  button:disabled,
+  button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+  &_number {
+    display: flex;
+
+    div {
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    &-active,
+    div:hover {
+      background: $pagination_color_primary;
+      color: $pagination_color_secondary;
+    }
+  }
+}
